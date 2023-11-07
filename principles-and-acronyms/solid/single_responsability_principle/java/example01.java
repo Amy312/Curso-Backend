@@ -26,6 +26,21 @@ class Pikachu implements Attacker {
     }
 }
 
+class Blissey implements Healer {
+	public void heal() {
+        System.out.println("Blissey esta curando!");
+    }
+}
+
+class Charizard implements Attacker, Flyer {
+	public void  attack(){
+		System.out.println("Charizard esta usando meteoro!");
+	}
+	
+	public void fly() {
+		System.out.println("Charizard esta volando!");
+	}
+}
 class Lapras implements Swimmer, Attacker {
     public void swim() {
         System.out.println("Lapras nada tranquilamente!");
@@ -40,5 +55,8 @@ class Principal {
 	public static void main(String [] args) {
 		Lapras lapra = new Lapras();
 		lapra.swim();
+		Charizard chari = new Charizard();
+		chari.fly();
+        chari.attack();
 	}
 }

@@ -1,27 +1,43 @@
-interface Catchable {
-    void catchPokemon();
-}
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-class Pikachu implements Catchable {
-    public void catchPokemon() {
-        System.out.println("Pikachu fue atrapado!");
-    }
-}
-
-class Charmander implements Catchable {
-    public void catchPokemon() {
-        System.out.println("Charmander fue atrapado!");
-    }
+class Pokemon  {
+	private String name;
+	public Pokemon(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
 }
 
 class Pokeball {
-    private Catchable pokemon;
+    private Pokemon pokemon;
 
-    public Pokeball(Catchable pokemon) {
+    public Pokeball(Pokemon pokemon) {
         this.pokemon = pokemon;
     }
 
     public void catchAction() {
-        pokemon.catchPokemon();
+        System.out.println(this.pokemon.getName() + " fue atrapado");
     }
+}
+
+
+class Principal
+{
+	public static void main (String [] args)
+	{
+        //Pokemon pikachu = new Pokemon("pika");
+		// Polimorfismo
+		Pokemon pika = new Pokemon("Pikachu");
+		// pikachu.catchPokemon();
+		Pokeball pokeball = new Pokeball(pika);
+		pokeball.catchAction();
+	
+		
+	}
 }
