@@ -5,9 +5,7 @@ import main.java.application.model.Order;
 import main.java.application.ports.in.InventoryService;
 
 //@RestController
-//@RequestMapping("/orders")
-//@RequestMapping("/books")
-//@RequestMapping("/interfaces")
+//@RequestMapping("/inventory")
 
 
 public class InventoryController {
@@ -20,12 +18,12 @@ public class InventoryController {
 
    // @PostMapping
     public ResponseEntity<Void> createOrder(@RequestBody Order order) {
-        orderService.createOrder(order);
+        inventoryService.createOrder(order);
         return ResponseEntity.ok().build();
     }
 
    // @GetMapping
     public ResponseEntity<List<Order>> listOrders() {
-        return ResponseEntity.ok(orderService.listOrders());
+        return ResponseEntity.ok(inventoryService.listOrders());
     }
 }

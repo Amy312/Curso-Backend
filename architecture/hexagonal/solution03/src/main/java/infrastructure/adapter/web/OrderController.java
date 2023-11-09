@@ -5,8 +5,6 @@ import main.java.application.ports.in.OrderService;
 
 //@RestController
 //@RequestMapping("/orders")
-//@RequestMapping("/books")
-//@RequestMapping("/interfaces")
 
 
 public class OrderController {
