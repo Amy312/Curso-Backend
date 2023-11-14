@@ -42,3 +42,46 @@ info:[13/Nov/2023:14:28:04 -0400] Creando usuario en Repository
 debug:[13/Nov/2023:14:28:04 -0400] Datos del nuevo usuario: 
 debug:[13/Nov/2023:14:28:04 -0400] Datos del nuevo usuario: 
 info:[13/Nov/2023:14:28:04 -0400] ::1 - - [13/Nov/2023:18:28:04 +0000] "POST /users/ HTTP/1.1" 201 190 "-" "PostmanRuntime/7.33.0"
+info:[14/Nov/2023:07:37:13 -0400] ::1 - - [14/Nov/2023:11:37:13 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[14/Nov/2023:07:37:13 -0400] ::1 - - [14/Nov/2023:11:37:13 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[14/Nov/2023:07:40:29 -0400] ::1 - - [14/Nov/2023:11:40:29 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[14/Nov/2023:07:40:38 -0400] estoy dentro del UserById Controller
+info:[14/Nov/2023:07:40:38 -0400] estoy dentro del UserById Service
+debug:[14/Nov/2023:07:40:38 -0400] esto es
+info:[14/Nov/2023:07:40:38 -0400] Alguna información relevante
+info:[14/Nov/2023:07:40:38 -0400] ::1 - - [14/Nov/2023:11:40:38 +0000] "GET /users/1 HTTP/1.1" 200 73 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[14/Nov/2023:07:45:42 -0400] ::1 - - [14/Nov/2023:11:45:42 +0000] "POST /users/1 HTTP/1.1" 404 147 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:07:46:37 -0400] Actualizando información de usuario en Repository
+debug:[14/Nov/2023:07:46:37 -0400] Usuario actualizado: 
+info:[14/Nov/2023:07:46:37 -0400] ::1 - - [14/Nov/2023:11:46:37 +0000] "PUT /users/1 HTTP/1.1" 201 179 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:07:46:49 -0400] estoy dentro del UserById Controller
+info:[14/Nov/2023:07:46:49 -0400] estoy dentro del UserById Service
+debug:[14/Nov/2023:07:46:49 -0400] esto es
+info:[14/Nov/2023:07:46:49 -0400] Alguna información relevante
+info:[14/Nov/2023:07:46:49 -0400] ::1 - - [14/Nov/2023:11:46:49 +0000] "GET /users/1 HTTP/1.1" 200 99 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[14/Nov/2023:07:50:18 -0400] Eliminando usuario en Repository
+debug:[14/Nov/2023:07:50:18 -0400] Usuario eliminado correctamente
+info:[14/Nov/2023:07:50:18 -0400] ::1 - - [14/Nov/2023:11:50:18 +0000] "DELETE /users/8af3cf07-a9f3-404c-8a62-a8d7f888e6a9 HTTP/1.1" 201 66 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:10:31:12 -0400] Creando usuario en Repository
+debug:[14/Nov/2023:10:31:12 -0400] Datos del nuevo usuario: 
+debug:[14/Nov/2023:10:31:12 -0400] Datos del nuevo usuario: 
+info:[14/Nov/2023:10:31:12 -0400] ::1 - - [14/Nov/2023:14:31:12 +0000] "POST /roles HTTP/1.1" 201 89 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:10:31:42 -0400] Actualizando información de rol en Repository
+debug:[14/Nov/2023:10:31:42 -0400] Rol actualizado: 
+info:[14/Nov/2023:10:31:42 -0400] ::1 - - [14/Nov/2023:14:31:42 +0000] "PUT /roles/71b12a34-3bff-455d-874d-0147b94f1787 HTTP/1.1" 201 106 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:10:31:50 -0400] estoy dentro del UserById Controller
+info:[14/Nov/2023:10:31:50 -0400] estoy dentro del GET de ROL by ID Service
+debug:[14/Nov/2023:10:31:50 -0400] prueba de si funca el debug, parece que no 
+info:[14/Nov/2023:10:31:50 -0400] Alguna información relevante
+info:[14/Nov/2023:10:31:50 -0400] ::1 - - [14/Nov/2023:14:31:50 +0000] "GET /roles/71b12a34-3bff-455d-874d-0147b94f1787 HTTP/1.1" 200 106 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:10:31:56 -0400] Eliminando rol en Repository
+debug:[14/Nov/2023:10:31:56 -0400] Rol eliminado correctamente
+info:[14/Nov/2023:10:31:56 -0400] ::1 - - [14/Nov/2023:14:31:56 +0000] "DELETE /roles/71b12a34-3bff-455d-874d-0147b94f1787 HTTP/1.1" 201 62 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:10:34:03 -0400] estoy dentro del UserById Controller
+info:[14/Nov/2023:10:34:03 -0400] estoy dentro del GET de ROL by ID Service
+debug:[14/Nov/2023:10:34:03 -0400] prueba de si funca el debug, parece que no 
+info:[14/Nov/2023:10:34:03 -0400] Alguna información relevante
+info:[14/Nov/2023:10:34:03 -0400] ::1 - - [14/Nov/2023:14:34:03 +0000] "GET /roles/1 HTTP/1.1" 200 77 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:10:34:12 -0400] Actualizando información de rol en Repository
+debug:[14/Nov/2023:10:34:12 -0400] Rol actualizado: 
+info:[14/Nov/2023:10:34:12 -0400] ::1 - - [14/Nov/2023:14:34:12 +0000] "PUT /roles/1 HTTP/1.1" 201 71 "-" "PostmanRuntime/7.35.0"

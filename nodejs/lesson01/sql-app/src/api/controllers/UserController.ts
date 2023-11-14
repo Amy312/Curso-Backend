@@ -2,6 +2,7 @@ import { Request, Response, Router } from 'express';
 import { UserService } from './../../app/services/user.service';
 import { CreateUserDTO } from '../../app/dtos/create.user.dto';
 import logger from '../../infrastucture/logger/logger';
+import { UpdateUserDTO } from '../../app/dtos/update.user.dto';
 
 export class UserController {
     public router: Router;
@@ -21,10 +22,8 @@ export class UserController {
         if (!userDto) {
             res.status(404).json({ message: 'User not found' });
             logger.error("Error de usuario");
-
             return;
         }
-
         res.json(userDto);
     }
 
@@ -39,8 +38,33 @@ export class UserController {
         }
     }
 
+    public async updateUser(req: Request, res: Response): Promise<Response> {
+        try {
+            const userId = req.params.id;
+            const userDto: UpdateUserDTO = req.body;
+            const user = await this.userService.updateUser(userId, userDto);
+            return res.status(201).json(user);
+        } catch (error) {
+            logger.error("Error en Update user", error)
+            return res.status(400).json({ message: error });
+        }
+    }
+
+    public async deleteUser(req: Request, res: Response): Promise<Response> {
+        try {
+            const userId = req.params.id;
+            const user = await this.userService.deleteUser(userId);
+            return res.status(201).json(user);
+        } catch (error) {
+            logger.error("Error en Delete user", error)
+            return res.status(400).json({ message: error });
+        }
+    }
+
     public routes() {
         this.router.get('/:id', this.getUserById.bind(this));
         this.router.post('/', this.createUser.bind(this));
+        this.router.put('/:id', this.updateUser.bind(this));
+        this.router.delete('/:id', this.deleteUser.bind(this));
     }
 }

@@ -40,7 +40,7 @@ export class UserService {
         return this.userRepository.createUser(newUser);
     }
 
-    async updateUser(id: string, userDto: UpdateUserDTO): Promise<User> {
+    async updateUser(id: string, userDto: UpdateUserDTO): Promise<User | null> {
         // info 
         const userEntity: IUserEntity = {
             username: userDto?.username,
@@ -50,8 +50,7 @@ export class UserService {
             lastLogin: new Date()
         };
         const newUser = new User(userEntity);
-        // logger.debug newUser // creating UserEntity 
-        return this.userRepository.updateUser(id, newUser);
+        return this.userRepository.updateUser(id, newUser)
     }
 
     async deleteUser(id: string): Promise<UserDto | null> {

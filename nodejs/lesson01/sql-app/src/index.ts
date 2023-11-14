@@ -6,10 +6,13 @@ import { UserRepositoryImpl } from './infrastucture/repositories/user.reposity';
 import morgan from "morgan";
 import logger from './infrastucture/logger/logger'; 
 import { env } from './infrastucture/config/config';
+import { RolService } from './app/services/rol.service';
+import { RolController } from './api/controllers/RolController';
+import { RolRepositoryImpl } from './infrastucture/repositories/rol.repository';
 
 AppDataSource.initialize().then(() => {
     const app = express();
-    const PORT = env.envPort;
+    const PORT = env.port;
     console.log(PORT);
 
     app.use(express.json());
@@ -26,8 +29,12 @@ AppDataSource.initialize().then(() => {
     const userService = new UserService(userRepository);
     const userController = new UserController(userService);
 
+    const rolRepository = new RolRepositoryImpl();
+    const rolService = new RolService(rolRepository);
+    const rolController = new RolController(rolService);
 
     app.use('/users', userController.router);
+    app.use('/roles', rolController.router);
 
     app.listen(PORT, () => {
         console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
