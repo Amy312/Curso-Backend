@@ -1,0 +1,44 @@
+info:[13/Nov/2023:13:07:27 -0400] ::1 - - [13/Nov/2023:17:07:27 +0000] "GET /users HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:09:04 -0400] ::1 - - [13/Nov/2023:17:09:04 +0000] "GET /user HTTP/1.1" 404 143 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:09:07 -0400] ::1 - - [13/Nov/2023:17:09:07 +0000] "GET /users HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:09:18 -0400] ::1 - - [13/Nov/2023:17:09:18 +0000] "GET /users/1 HTTP/1.1" 404 28 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:15:16 -0400] ::1 - - [13/Nov/2023:17:15:16 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:13:15:32 -0400] ::1 - - [13/Nov/2023:17:15:32 +0000] "GET /users/1 HTTP/1.1" 404 28 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:15:32 -0400] ::1 - - [13/Nov/2023:17:15:32 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/users/1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:15:34 -0400] ::1 - - [13/Nov/2023:17:15:34 +0000] "GET /users HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:15:41 -0400] ::1 - - [13/Nov/2023:17:15:41 +0000] "GET /users/2 HTTP/1.1" 404 28 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:27:58 -0400] ::1 - - [13/Nov/2023:17:27:58 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:13:28:03 -0400] ::1 - - [13/Nov/2023:17:28:03 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:13:28:17 -0400] ::1 - - [13/Nov/2023:17:28:17 +0000] "GET /users HTTP/1.1" 404 144 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:13:28:32 -0400] ::1 - - [13/Nov/2023:17:28:32 +0000] "GET /users/1 HTTP/1.1" 404 28 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:13:28:36 -0400] ::1 - - [13/Nov/2023:17:28:36 +0000] "GET /users/2 HTTP/1.1" 404 28 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:13:30:07 -0400] ::1 - - [13/Nov/2023:17:30:07 +0000] "POST /users/ HTTP/1.1" 400 14 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:13:30:15 -0400] ::1 - - [13/Nov/2023:17:30:15 +0000] "POST / HTTP/1.1" 404 140 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:13:30:22 -0400] ::1 - - [13/Nov/2023:17:30:22 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:13:44:38 -0400] ::1 - - [13/Nov/2023:17:44:38 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:45:26 -0400] ::1 - - [13/Nov/2023:17:45:26 +0000] "GET /users HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:45:27 -0400] ::1 - - [13/Nov/2023:17:45:27 +0000] "GET /users HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:13:45:30 -0400] ::1 - - [13/Nov/2023:17:45:30 +0000] "GET /users/1 HTTP/1.1" 404 28 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:14:07:41 -0400] ::1 - - [13/Nov/2023:18:07:41 +0000] "POST /users/ HTTP/1.1" 400 1075 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:14:09:09 -0400] ::1 - - [13/Nov/2023:18:09:09 +0000] "POST /users/ HTTP/1.1" 201 194 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:14:09:26 -0400] estoy dentro del UserById Controller
+info:[13/Nov/2023:14:09:26 -0400] estoy dentro del UserById Service
+info:[13/Nov/2023:14:09:26 -0400] Alguna información relevante
+info:[13/Nov/2023:14:09:26 -0400] ::1 - - [13/Nov/2023:18:09:26 +0000] "GET /users/8af3cf07-a9f3-404c-8a62-a8d7f888e6a9 HTTP/1.1" 200 110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+error:[13/Nov/2023:14:16:45 -0400] Error en Create user ER_DUP_ENTRY: Duplicate entry 'awita@cmohm.com' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f'
+info:[13/Nov/2023:14:16:45 -0400] ::1 - - [13/Nov/2023:18:16:45 +0000] "POST /users/ HTTP/1.1" 400 1138 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:14:20:14 -0400] Creando usuario en Repository
+info:[13/Nov/2023:14:20:14 -0400] ::1 - - [13/Nov/2023:18:20:14 +0000] "POST /users/ HTTP/1.1" 201 188 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:14:20:20 -0400] Creando usuario en Repository
+error:[13/Nov/2023:14:20:20 -0400] Error en Create user ER_DUP_ENTRY: Duplicate entry 'amy@saa.com' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f'
+info:[13/Nov/2023:14:20:20 -0400] ::1 - - [13/Nov/2023:18:20:20 +0000] "POST /users/ HTTP/1.1" 400 1118 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:14:21:37 -0400] estoy dentro del UserById Controller
+info:[13/Nov/2023:14:21:37 -0400] estoy dentro del UserById Service
+info:[13/Nov/2023:14:21:37 -0400] Alguna información relevante
+info:[13/Nov/2023:14:21:37 -0400] ::1 - - [13/Nov/2023:18:21:37 +0000] "GET /users/8af3cf07-a9f3-404c-8a62-a8d7f888e6a9 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+info:[13/Nov/2023:14:26:19 -0400] Creando usuario en Repository
+info:[13/Nov/2023:14:26:19 -0400] ::1 - - [13/Nov/2023:18:26:19 +0000] "POST /users/ HTTP/1.1" 201 189 "-" "PostmanRuntime/7.33.0"
+info:[13/Nov/2023:14:28:04 -0400] Creando usuario en Repository
+debug:[13/Nov/2023:14:28:04 -0400] Datos del nuevo usuario: 
+debug:[13/Nov/2023:14:28:04 -0400] Datos del nuevo usuario: 
+info:[13/Nov/2023:14:28:04 -0400] ::1 - - [13/Nov/2023:18:28:04 +0000] "POST /users/ HTTP/1.1" 201 190 "-" "PostmanRuntime/7.33.0"

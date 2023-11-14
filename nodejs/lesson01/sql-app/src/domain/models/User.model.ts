@@ -22,7 +22,3 @@ export class User {
 
    
 }
-
-const logout = () => {
-    // logic logout
-}

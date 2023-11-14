@@ -1,9 +1,9 @@
 export interface IUserEntity {
-    id: string;
+    id?: string;
     username:string;
     email:string;
     passwordHash: string;
-    createdAt: Date;
+    createdAt?: Date;
     lastLogin: Date | null;
     roleId: string;
 }

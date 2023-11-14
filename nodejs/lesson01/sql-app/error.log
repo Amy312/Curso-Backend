@@ -1,0 +1,2 @@
+error:[13/Nov/2023:14:16:45 -0400] Error en Create user ER_DUP_ENTRY: Duplicate entry 'awita@cmohm.com' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f'
+error:[13/Nov/2023:14:20:20 -0400] Error en Create user ER_DUP_ENTRY: Duplicate entry 'amy@saa.com' for key 'user_entity.IDX_415c35b9b3b6fe45a3b065030f'
