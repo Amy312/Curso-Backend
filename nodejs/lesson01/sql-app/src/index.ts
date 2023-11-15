@@ -25,13 +25,15 @@ AppDataSource.initialize().then(() => {
         res.send('¡Hola Mundo con Express y TypeScript ssssss!');
     });
 
-    const userRepository = new UserRepositoryImpl();
-    const userService = new UserService(userRepository);
-    const userController = new UserController(userService);
-
     const rolRepository = new RolRepositoryImpl();
     const rolService = new RolService(rolRepository);
     const rolController = new RolController(rolService);
+    
+    const userRepository = new UserRepositoryImpl();
+    const userService = new UserService(userRepository, rolRepository);
+    const userController = new UserController(userService);
+
+
 
     app.use('/users', userController.router);
     app.use('/roles', rolController.router);

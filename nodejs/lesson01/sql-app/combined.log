@@ -85,3 +85,11 @@ info:[14/Nov/2023:10:34:03 -0400] ::1 - - [14/Nov/2023:14:34:03 +0000] "GET /rol
 info:[14/Nov/2023:10:34:12 -0400] Actualizando información de rol en Repository
 debug:[14/Nov/2023:10:34:12 -0400] Rol actualizado: 
 info:[14/Nov/2023:10:34:12 -0400] ::1 - - [14/Nov/2023:14:34:12 +0000] "PUT /roles/1 HTTP/1.1" 201 71 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:13:41:02 -0400] Actualizando información de rol en Repository
+debug:[14/Nov/2023:13:41:02 -0400] Rol actualizado: 
+info:[14/Nov/2023:13:41:02 -0400] ::1 - - [14/Nov/2023:17:41:02 +0000] "PUT /roles/1 HTTP/1.1" 201 75 "-" "PostmanRuntime/7.35.0"
+info:[14/Nov/2023:13:41:19 -0400] estoy dentro del UserById Controller
+info:[14/Nov/2023:13:41:19 -0400] estoy dentro del UserById Service
+debug:[14/Nov/2023:13:41:19 -0400] esto es
+info:[14/Nov/2023:13:41:19 -0400] Alguna información relevante
+info:[14/Nov/2023:13:41:19 -0400] ::1 - - [14/Nov/2023:17:41:19 +0000] "GET /users/1 HTTP/1.1" 200 99 "-" "PostmanRuntime/7.35.0"

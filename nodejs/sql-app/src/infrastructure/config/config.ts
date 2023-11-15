@@ -18,3 +18,8 @@ export const db = {
 export const lg = {
     level: process.env.LG_LEVEL || 'info'
 }
+
+export const jwt = {
+    secretKey:process.env.JWT_SECRET || 'your_secret_key'
+    expirationTime : process.env.JWT_TIME_EXPIRED || '1h'
+}

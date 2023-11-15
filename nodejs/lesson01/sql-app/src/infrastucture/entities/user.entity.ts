@@ -1,5 +1,7 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, JoinColumn, ManyToOne } from "typeorm";
 import { IUserEntity } from '../../domain/entities/IUserEntity';
+import { RolEntity } from "./rol.entity";
+import { IRolEntity } from "../../domain/entities/IRolEntity";
 @Entity()
 export class UserEntity implements IUserEntity {
     @PrimaryGeneratedColumn("uuid")
@@ -20,6 +22,7 @@ export class UserEntity implements IUserEntity {
     @Column({ type: 'timestamp', nullable: true })
     lastLogin!: Date;
 
-    @Column({ type: 'uuid' })
-    roleId!: string;
+    @ManyToOne(() => RolEntity)
+    @JoinColumn({ name: 'roleId'})
+    role: IRolEntity;
 }

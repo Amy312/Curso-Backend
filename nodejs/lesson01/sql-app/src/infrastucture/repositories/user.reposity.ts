@@ -4,26 +4,32 @@ import { UserEntity } from "../entities/user.entity";
 import logger from "../logger/logger";
 import { UserRepository } from "./../../domain/interfaces/user.repository";
 import { User } from "./../../domain/models/User.model";
+import bcrypt from "bcrypt";
 
 export class UserRepositoryImpl implements UserRepository {
+
   async findById(id: string): Promise<User | null> {
     logger.info("Alguna información relevante");
-    const userEntity = await AppDataSource.getRepository(UserEntity).findOneBy({
-      id,
+    const userRepository = AppDataSource.getRepository(UserEntity);
+    const user = await userRepository.findOne({
+      where: { id },
+      relations: ["role"],
     });
-    return userEntity ? new User(userEntity) : null;
+    return user ? new User(user) : null;
   }
 
   async createUser(user: User): Promise<User> {
     // TODO: set user values
     logger.info("Creando usuario en Repository");
+    const salt = bcrypt.genSaltSync(10);
+    const hash = bcrypt.hashSync(user.passwordHash, salt);
     const dataUser = {
       username: user.username,
       email: user.email,
       passwordHash: user.passwordHash,
       createdAt: user.createdAt || new Date(),
       lastLogin: user.lastLogin || undefined,
-      roleId: user.roleId,
+      role: user.role,
     };
     logger.debug("Datos del nuevo usuario: ", dataUser);
     const userEntity = AppDataSource.getRepository(UserEntity).create(dataUser);
@@ -38,61 +44,52 @@ export class UserRepositoryImpl implements UserRepository {
       passwordHash: userResponse.passwordHash,
       createdAt: userResponse.createdAt,
       lastLogin: userResponse.lastLogin,
-      roleId: userResponse.roleId,
+      role: userResponse.role,
     });
     logger.debug("Datos del nuevo usuario: ", userNew);
     return userNew;
   }
 
-  async updateUser(id: string, user: User): Promise<User | null> {
+  async updateUser(id: string, user: Partial<User>): Promise<User> {
     logger.info("Actualizando información de usuario en Repository");
 
     // Buscar el usuario por su ID
-    const userEntity = await AppDataSource.getRepository(UserEntity).findOneBy({id});
+    const repository = AppDataSource.getRepository(UserEntity);
+    const userN = await repository.findOneBy({ id });
 
-    if (userEntity) {
-      // Actualizar los campos del usuario con los nuevos datos
-      userEntity.username = user.username || userEntity.username;
-      userEntity.email = user.email || userEntity.email;
-      userEntity.passwordHash = user.passwordHash || userEntity.passwordHash;
-      userEntity.lastLogin = user.lastLogin || userEntity.lastLogin;
-      userEntity.roleId = user.roleId || userEntity.roleId;
-
-      // Guardar los cambios en la base de datos
-      await AppDataSource.getRepository(UserEntity).save(userEntity);
-
-      // Crear un nuevo objeto User con los datos actualizados
-      const updatedUser = new User({
-        id: userEntity.id,
-        username: userEntity.username,
-        email: userEntity.email,
-        passwordHash: userEntity.passwordHash,
-        createdAt: userEntity.createdAt,
-        lastLogin: userEntity.lastLogin,
-        roleId: userEntity.roleId,
-      });
-      logger.debug("Usuario actualizado: ", updatedUser);
-      return updatedUser;
-    } else {
-      logger.error("Usuario no encontrado para actualizar");
-      return null;
+    if (!userN) {
+      logger.error(
+        `UserRepository: Error al modificar al usuario con ID: ${id}.`
+      );
+      throw new Error("Usuario no encontrado");
     }
+
+    // if (user.role.id !== updateData.roleId)
+    // get role a partir del updateData.roleId
+    // if (!role)
+    // user.role = role
+
+    repository.merge(userN, user);
+    const updatedUser = await repository.save(userN);
+    return updatedUser;
   }
   async deleteUser(id: string): Promise<User | null> {
-    logger.info('Eliminando usuario en Repository');
+    logger.info("Eliminando usuario en Repository");
 
     // Buscar el usuario por su ID
-    const userEntity = await AppDataSource.getRepository(UserEntity).findOneBy({ id });
+    const userEntity = await AppDataSource.getRepository(UserEntity).findOneBy({
+      id,
+    });
 
     if (userEntity) {
-        // Eliminar el usuario de la base de datos
-        await AppDataSource.getRepository(UserEntity).remove(userEntity);
+      // Eliminar el usuario de la base de datos
+      await AppDataSource.getRepository(UserEntity).remove(userEntity);
 
-        logger.debug('Usuario eliminado correctamente');
-        return userEntity;
+      logger.debug("Usuario eliminado correctamente");
+      return userEntity;
     } else {
-        logger.error('Usuario no encontrado para eliminar');
-        return null;
+      logger.error("Usuario no encontrado para eliminar");
+      return null;
     }
   }
 }
