@@ -7,6 +7,14 @@ import { User } from "./../../domain/models/User.model";
 import bcrypt from "bcrypt";
 
 export class UserRepositoryImpl implements UserRepository {
+  async findByEmail(email: string): Promise<User | null> {
+    const userRepository = AppDataSource.getRepository(UserEntity);
+    const user = await userRepository.findOne({
+      where: { email },
+      relations: ["role"],
+    });
+    return user ? new User(user) : null;
+  }
 
   async findById(id: string): Promise<User | null> {
     logger.info("Alguna información relevante");
@@ -19,25 +27,23 @@ export class UserRepositoryImpl implements UserRepository {
   }
 
   async createUser(user: User): Promise<User> {
+    const userRepository = AppDataSource.getRepository(UserEntity);
+
     // TODO: set user values
     logger.info("Creando usuario en Repository");
     const salt = bcrypt.genSaltSync(10);
     const hash = bcrypt.hashSync(user.passwordHash, salt);
-    const dataUser = {
+    const userEntity = userRepository.create({
       username: user.username,
       email: user.email,
-      passwordHash: user.passwordHash,
+      passwordHash: hash,
       createdAt: user.createdAt || new Date(),
-      lastLogin: user.lastLogin || undefined,
+      lastLogin: user.lastLogin || null,
       role: user.role,
-    };
-    logger.debug("Datos del nuevo usuario: ", dataUser);
-    const userEntity = AppDataSource.getRepository(UserEntity).create(dataUser);
+    });
+    const userResponse = await userRepository.save(userEntity);
 
-    const userResponse = await AppDataSource.getRepository(UserEntity).save(
-      userEntity
-    );
-    const userNew = new User({
+    return new User({
       id: userResponse.id,
       username: userResponse.username,
       email: userResponse.email,
@@ -46,8 +52,6 @@ export class UserRepositoryImpl implements UserRepository {
       lastLogin: userResponse.lastLogin,
       role: userResponse.role,
     });
-    logger.debug("Datos del nuevo usuario: ", userNew);
-    return userNew;
   }
 
   async updateUser(id: string, user: Partial<User>): Promise<User> {

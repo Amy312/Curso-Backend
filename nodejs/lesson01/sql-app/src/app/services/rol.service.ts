@@ -4,6 +4,7 @@ import { Rol } from '../../domain/models/Rol.model';
 import logger from '../../infrastucture/logger/logger';
 import { CreateRolDto } from '../dtos/create.rol';
 import { RolDto } from '../dtos/rol.dto';
+import { Permission } from './../../domain/models/Permission.model';
 
 export class RolService {
     constructor(private rolRepository: RolRepository) { }
@@ -27,16 +28,19 @@ export class RolService {
         const rolEntity: IRolEntity = {
             name: rolDto.name,
             description: rolDto.description,
+            permissions: null
+
         };
         const newRol = new Rol(rolEntity);
         return this.rolRepository.createRol(newRol);
     }
 
-    async updateRol(id: string, rolDto: CreateRolDto): Promise<Rol | null> {
+    async updateRol(id: string, rolDto: CreateRolDto): Promise<Rol> {
         // info 
         const rolEntity: IRolEntity = {
             name: rolDto?.name,
             description: rolDto?.description,
+            permissions: null
         };
         const newRol = new Rol(rolEntity);
         return this.rolRepository.updateRol(id, newRol);
@@ -52,7 +56,6 @@ export class RolService {
             name: rol.name,
             description: rol.description,
         }
-        // log.info user obtenido exitosamente
         return rolResponse;
     }
 }

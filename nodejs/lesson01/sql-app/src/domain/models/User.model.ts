@@ -21,9 +21,7 @@ export class User {
         this.role = userEntity.role;
     }
 
-    public login(): string{
-        return 'holiw';
-    }
+
 
    
 }

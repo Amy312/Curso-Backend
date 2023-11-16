@@ -3,6 +3,7 @@ import { DataSource } from "typeorm";
 import { UserEntity } from "../entities/user.entity";
 import { db } from "./config";
 import { RolEntity } from "../entities/rol.entity";
+import { PermissionEntity } from "../entities/permission.entity";
 
 export const AppDataSource = new DataSource({
     type: db.type as "mysql" | "postgres",
@@ -13,7 +14,7 @@ export const AppDataSource = new DataSource({
     database: db.database,
     synchronize: true,
     logging: false,
-    entities: [UserEntity, RolEntity],
+    entities: [UserEntity, RolEntity, PermissionEntity],
     subscribers: [],
     migrations: [],
 });

@@ -9,6 +9,9 @@ import { env } from './infrastucture/config/config';
 import { RolService } from './app/services/rol.service';
 import { RolController } from './api/controllers/RolController';
 import { RolRepositoryImpl } from './infrastucture/repositories/rol.repository';
+import { PermissionRepositoryImpl } from './infrastucture/repositories/permission.repository';
+import { PermissionService } from './app/services/permission.service';
+import { PermissionController } from './api/controllers/PermissionController';
 
 AppDataSource.initialize().then(() => {
     const app = express();
@@ -25,6 +28,10 @@ AppDataSource.initialize().then(() => {
         res.send('¡Hola Mundo con Express y TypeScript ssssss!');
     });
 
+    const permissionRepository = new PermissionRepositoryImpl();
+    const permissionService = new PermissionService(permissionRepository);
+    const permissionController = new PermissionController(permissionService);
+
     const rolRepository = new RolRepositoryImpl();
     const rolService = new RolService(rolRepository);
     const rolController = new RolController(rolService);
@@ -37,6 +44,7 @@ AppDataSource.initialize().then(() => {
 
     app.use('/users', userController.router);
     app.use('/roles', rolController.router);
+    app.use('/permissions', permissionController.router)
 
     app.listen(PORT, () => {
         console.log(`Servidor ejecutándose en http://localhost:${PORT}`);

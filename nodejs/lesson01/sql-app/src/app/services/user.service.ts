@@ -22,7 +22,7 @@ export class UserService {
             id: user.id,
             username: user.username,
             email: user.email,
-            lastLogin: user.lastLogin
+            lastLogin: user.lastLogin,
         }
         // log.info user obtenido exitosamente
         return userResponse;

@@ -93,3 +93,103 @@ info:[14/Nov/2023:13:41:19 -0400] estoy dentro del UserById Service
 debug:[14/Nov/2023:13:41:19 -0400] esto es
 info:[14/Nov/2023:13:41:19 -0400] Alguna información relevante
 info:[14/Nov/2023:13:41:19 -0400] ::1 - - [14/Nov/2023:17:41:19 +0000] "GET /users/1 HTTP/1.1" 200 99 "-" "PostmanRuntime/7.35.0"
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:00:19 -0400"}
+info: estoy dentro del UserById Service {"timestamp":"16/Nov/2023:10:00:19 -0400"}
+debug: esto es {"timestamp":"16/Nov/2023:10:00:19 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:00:19 -0400"}
+info: ::1 - - [16/Nov/2023:14:00:19 +0000] "GET /users/1 HTTP/1.1" 200 99 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:00:19 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:07:41 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:10:07:41 -0400"}
+error: Error en Create user data and salt arguments required {"stack":"Error: data and salt arguments required\n    at Object.hashSync (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\node_modules\\bcrypt\\bcrypt.js:91:15)\n    at UserRepositoryImpl.<anonymous> (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:35:25)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:4:12)\n    at UserRepositoryImpl.createUser (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:44:16)\n    at UserService.<anonymous> (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\user.service.ts:46:36)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\user.service.ts:5:58)","timestamp":"16/Nov/2023:10:07:41 -0400"}
+info: ::1 - - [16/Nov/2023:14:07:41 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:07:41 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:08:59 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:10:08:59 -0400"}
+error: Error en Create user data and salt arguments required {"stack":"Error: data and salt arguments required\n    at Object.hashSync (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\node_modules\\bcrypt\\bcrypt.js:91:15)\n    at UserRepositoryImpl.<anonymous> (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:35:25)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:4:12)\n    at UserRepositoryImpl.createUser (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:44:16)\n    at UserService.<anonymous> (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\user.service.ts:46:36)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\user.service.ts:5:58)","timestamp":"16/Nov/2023:10:08:59 -0400"}
+info: ::1 - - [16/Nov/2023:14:08:59 +0000] "POST /users HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:08:59 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:09:20 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:10:09:20 -0400"}
+error: Error en Create user data and salt arguments required {"stack":"Error: data and salt arguments required\n    at Object.hashSync (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\node_modules\\bcrypt\\bcrypt.js:91:15)\n    at UserRepositoryImpl.<anonymous> (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:35:25)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:4:12)\n    at UserRepositoryImpl.createUser (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:44:16)\n    at UserService.<anonymous> (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\user.service.ts:46:36)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\user.service.ts:5:58)","timestamp":"16/Nov/2023:10:09:20 -0400"}
+info: ::1 - - [16/Nov/2023:14:09:20 +0000] "POST /users/ HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:09:20 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:14:22 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:10:14:22 -0400"}
+error: Error en Create user data and salt arguments required {"stack":"Error: data and salt arguments required\n    at Object.hashSync (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\node_modules\\bcrypt\\bcrypt.js:91:15)\n    at UserRepositoryImpl.<anonymous> (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:35:25)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:4:12)\n    at UserRepositoryImpl.createUser (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\infrastucture\\repositories\\user.reposity.ts:44:16)\n    at UserService.<anonymous> (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\user.service.ts:46:36)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\user.service.ts:5:58)","timestamp":"16/Nov/2023:10:14:22 -0400"}
+info: ::1 - - [16/Nov/2023:14:14:22 +0000] "POST /users/ HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:14:22 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:15:12 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:10:15:12 -0400"}
+info: ::1 - - [16/Nov/2023:14:15:13 +0000] "POST /users/ HTTP/1.1" 201 306 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:15:13 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:23:14 -0400"}
+info: estoy dentro del UserById Service {"timestamp":"16/Nov/2023:10:23:14 -0400"}
+debug: esto es {"timestamp":"16/Nov/2023:10:23:14 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:23:14 -0400"}
+info: ::1 - - [16/Nov/2023:14:23:14 +0000] "GET /users/26c244fd-3a32-4fc8-ab72-e279a33fc259 HTTP/1.1" 200 106 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:23:14 -0400"}
+info: ::1 - - [16/Nov/2023:14:26:37 +0000] "GET /permissions/ HTTP/1.1" 404 151 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:26:37 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:10:26:44 -0400"}
+debug: Datos del nuevo usuario:  {"description":"prueba de permiso con create","name":"permiso mágico","timestamp":"16/Nov/2023:10:26:44 -0400"}
+debug: Datos del nuevo usuario:  {"description":"prueba de permiso con create","id":"4f56f336-9ea7-4eb1-b441-74ae759bd40b","name":"permiso mágico","timestamp":"16/Nov/2023:10:26:44 -0400"}
+info: ::1 - - [16/Nov/2023:14:26:44 +0000] "POST /permissions/ HTTP/1.1" 201 115 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:26:44 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:28:00 -0400"}
+info: estoy dentro del GET de ROL by ID Service {"timestamp":"16/Nov/2023:10:28:00 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:28:00 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:28:00 -0400"}
+info: ::1 - - [16/Nov/2023:14:28:00 +0000] "GET /permissions/1 HTTP/1.1" 200 75 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:28:00 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:29:37 -0400"}
+info: estoy dentro del GET de ROL by ID Service {"timestamp":"16/Nov/2023:10:29:37 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:29:37 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:29:37 -0400"}
+info: ::1 - - [16/Nov/2023:14:29:37 +0000] "GET /permissions/2 HTTP/1.1" 200 55 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:29:37 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:29:40 -0400"}
+info: estoy dentro del GET de ROL by ID Service {"timestamp":"16/Nov/2023:10:29:40 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:29:40 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:29:40 -0400"}
+info: ::1 - - [16/Nov/2023:14:29:40 +0000] "GET /permissions/1 HTTP/1.1" 200 75 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:29:40 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:29:42 -0400"}
+info: estoy dentro del GET de ROL by ID Service {"timestamp":"16/Nov/2023:10:29:42 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:29:42 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:29:42 -0400"}
+info: ::1 - - [16/Nov/2023:14:29:42 +0000] "GET /permissions/3 HTTP/1.1" 200 51 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:29:42 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:29:46 -0400"}
+info: estoy dentro del GET de ROL by ID Service {"timestamp":"16/Nov/2023:10:29:46 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:29:46 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:29:46 -0400"}
+error: Error de rol {"timestamp":"16/Nov/2023:10:29:46 -0400"}
+info: ::1 - - [16/Nov/2023:14:29:46 +0000] "GET /permissions/4 HTTP/1.1" 404 27 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:29:46 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:29:49 -0400"}
+info: estoy dentro del GET de ROL by ID Service {"timestamp":"16/Nov/2023:10:29:49 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:29:49 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:29:49 -0400"}
+error: Error de rol {"timestamp":"16/Nov/2023:10:29:49 -0400"}
+info: ::1 - - [16/Nov/2023:14:29:49 +0000] "GET /permissions/4 HTTP/1.1" 404 27 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:29:49 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:36:44 -0400"}
+info: estoy dentro del GET de PERMISSION by ID Service {"timestamp":"16/Nov/2023:10:36:44 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:36:44 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:36:44 -0400"}
+info: ::1 - - [16/Nov/2023:14:36:44 +0000] "GET /permissions/1 HTTP/1.1" 200 58 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:36:44 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:50:21 -0400"}
+info: estoy dentro del GET de PERMISSION by ID Service {"timestamp":"16/Nov/2023:10:50:21 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:50:21 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:50:21 -0400"}
+info: ::1 - - [16/Nov/2023:14:50:21 +0000] "GET /permissions/1 HTTP/1.1" 200 58 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:50:21 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:50:52 -0400"}
+info: estoy dentro del GET de PERMISSION by ID Service {"timestamp":"16/Nov/2023:10:50:52 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:50:52 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:50:52 -0400"}
+error: Error de permiso {"timestamp":"16/Nov/2023:10:50:52 -0400"}
+info: ::1 - - [16/Nov/2023:14:50:52 +0000] "GET /permissions/4f56f336-9ea7-4eb1-b441-74ae759bd40b HTTP/1.1" 404 34 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:50:52 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:51:14 -0400"}
+info: estoy dentro del GET de PERMISSION by ID Service {"timestamp":"16/Nov/2023:10:51:14 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:51:14 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:51:14 -0400"}
+error: Error de permiso {"timestamp":"16/Nov/2023:10:51:14 -0400"}
+info: ::1 - - [16/Nov/2023:14:51:14 +0000] "GET /permissions/4f56f336-9ea7-4eb1-b441-74ae759bd40b HTTP/1.1" 404 34 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:51:14 -0400"}
+info: Creando permiso en Repository {"timestamp":"16/Nov/2023:10:52:38 -0400"}
+debug: Datos del nuevo permiso:  {"description":"prueba de permiso con create","name":"permiso mágico","timestamp":"16/Nov/2023:10:52:38 -0400"}
+debug: Datos del nuevo Permiso:  {"description":"prueba de permiso con create","id":"875f6dd4-f9ee-40b8-afc0-eea990c1c854","name":"permiso mágico","timestamp":"16/Nov/2023:10:52:38 -0400"}
+info: ::1 - - [16/Nov/2023:14:52:38 +0000] "POST /permissions/ HTTP/1.1" 201 115 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:52:38 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:10:53:13 -0400"}
+info: estoy dentro del GET de PERMISSION by ID Service {"timestamp":"16/Nov/2023:10:53:13 -0400"}
+debug: prueba de si funca el debug, parece que no  {"timestamp":"16/Nov/2023:10:53:13 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:10:53:13 -0400"}
+info: ::1 - - [16/Nov/2023:14:53:13 +0000] "GET /permissions/875f6dd4-f9ee-40b8-afc0-eea990c1c854 HTTP/1.1" 200 115 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:53:13 -0400"}
+info: Actualizando información de Permiso en Repository {"timestamp":"16/Nov/2023:10:53:58 -0400"}
+debug: Permiso actualizado:  {"description":"prueba de permiso con create","id":"875f6dd4-f9ee-40b8-afc0-eea990c1c854","name":"cambio del permiso mágico","timestamp":"16/Nov/2023:10:53:58 -0400"}
+info: ::1 - - [16/Nov/2023:14:53:58 +0000] "PUT /permissions/875f6dd4-f9ee-40b8-afc0-eea990c1c854 HTTP/1.1" 201 126 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:53:58 -0400"}

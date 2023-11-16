@@ -29,7 +29,8 @@ export class RolRepositoryImpl implements RolRepository {
     const rolNew = new Rol({
       id: rolResponse.id,
       name: rolResponse.name,
-      description: rolResponse.description
+      description: rolResponse.description,
+      permissions: rolResponse.permissions
     });
     logger.debug("Datos del nuevo usuario: ", rolNew);
     return rolNew;
@@ -53,7 +54,9 @@ export class RolRepositoryImpl implements RolRepository {
       const updatedRol = new Rol({
         id: rolEntity.id,
         name: rolEntity.name,
-        description: rolEntity.description
+        description: rolEntity.description,
+        permissions: rolEntity.permissions
+
       });
       logger.debug("Rol actualizado: ", updatedRol);
       return updatedRol;
