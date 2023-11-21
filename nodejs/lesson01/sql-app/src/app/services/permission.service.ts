@@ -4,9 +4,10 @@ import { Permission } from '../../domain/models/Permission.model';
 import logger from '../../infrastucture/logger/logger';
 import { PermissionDto } from '../dtos/permission.dto';
 import { CreatePermissionDto } from './../dtos/create.permission.dto';
+import { RolRepository } from './../../domain/interfaces/rol.repository';
 
 export class PermissionService {
-    constructor(private permissionRepository: PermissionRepository) { }
+    constructor(private permissionRepository: PermissionRepository, rolRepository: RolRepository) { }
 
     async getPermissionById(id: string): Promise< PermissionDto | null > {
         logger.info("estoy dentro del GET de PERMISSION by ID Service");
@@ -27,7 +28,7 @@ export class PermissionService {
         const permissionEntity: IPermissionEntity = {
             name: permissionDto.name,
             description: permissionDto.description,
-            roles: null
+           // roles:
         };
         const newPermission = new Permission(permissionEntity);
         return this.permissionRepository.createPermission(newPermission);
@@ -38,7 +39,7 @@ export class PermissionService {
         const permissionEntity: IPermissionEntity = {
             name: permissionDto?.name,
             description: permissionDto?.description,
-            roles: null
+        //    roles: null
         };
         const newPermission = new Permission(permissionEntity);
         return this.permissionRepository.updatePermission(id, newPermission);

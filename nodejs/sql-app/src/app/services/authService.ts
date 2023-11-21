@@ -2,12 +2,10 @@ import { IUserEntity } from "../../domain/entities/IUserEntity";
 import { UserRepository } from "../../domain/interfaces/userRepository";
 import logger from "../../infrastructure/logger/logger";
 import { LoginDTO } from "../dtos/login.dto";
-import { jwt as jwtConfig } from '../../infrastructure/config/config';
-import jwt from 'jsonwebtoken';
 import { UserDto } from "../dtos/user.dto";
 import { User } from "../../domain/models/user";
 import { Encrypt } from './../utils/encrypt';
-import bcrypt from 'bcrypt';
+import { bcrypt } from 'bcrypt';
 
 export class AuthService {
     constructor(private userRepository: UserRepository, private encrypt: Encrypt) { }

@@ -28,7 +28,7 @@ export class RolService {
         const rolEntity: IRolEntity = {
             name: rolDto.name,
             description: rolDto.description,
-            permissions: null
+           // permissions: null
 
         };
         const newRol = new Rol(rolEntity);
@@ -40,7 +40,7 @@ export class RolService {
         const rolEntity: IRolEntity = {
             name: rolDto?.name,
             description: rolDto?.description,
-            permissions: null
+           // permissions: null
         };
         const newRol = new Rol(rolEntity);
         return this.rolRepository.updateRol(id, newRol);

@@ -6,13 +6,13 @@ export class Permission {
     id: string;
     name: string;
     description: string;
-    roles: IRolEntity[];
+  //  roles: IRolEntity[];
 
     constructor(permissionEntity: IPermissionEntity) {
         this.id = permissionEntity.id || uuidv4();
         this.name = permissionEntity.name;
         this.description = permissionEntity.description;
-        this.roles = permissionEntity.roles;
+    //    this.roles = permissionEntity.roles;
     }
 
    

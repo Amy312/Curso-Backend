@@ -4,5 +4,5 @@ export interface IRolEntity {
     id?: string;
     name: string;
     description: string;
-    permissions: IPermissionEntity[];
+    permissions?: IPermissionEntity[];
 }

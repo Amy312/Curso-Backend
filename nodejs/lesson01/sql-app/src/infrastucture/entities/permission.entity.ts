@@ -1,6 +1,7 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToMany } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable } from "typeorm";
 import { IPermissionEntity } from "../../domain/entities/IPermissionEntity";
 import { Rol } from "../../domain/models/Rol.model";
+ import { RolEntity } from "./rol.entity";
 
 @Entity()
 export class PermissionEntity implements IPermissionEntity{
@@ -13,6 +14,8 @@ export class PermissionEntity implements IPermissionEntity{
     @Column({ type: 'text' })
     description: string;
 
-    @ManyToMany(() => Rol)
-    roles: Rol[]
+    @ManyToMany(() => RolEntity, (rol) => rol.permissions)
+    roles: RolEntity[];
+
+
 }

@@ -193,3 +193,80 @@ info: ::1 - - [16/Nov/2023:14:53:13 +0000] "GET /permissions/875f6dd4-f9ee-40b8-
 info: Actualizando información de Permiso en Repository {"timestamp":"16/Nov/2023:10:53:58 -0400"}
 debug: Permiso actualizado:  {"description":"prueba de permiso con create","id":"875f6dd4-f9ee-40b8-afc0-eea990c1c854","name":"cambio del permiso mágico","timestamp":"16/Nov/2023:10:53:58 -0400"}
 info: ::1 - - [16/Nov/2023:14:53:58 +0000] "PUT /permissions/875f6dd4-f9ee-40b8-afc0-eea990c1c854 HTTP/1.1" 201 126 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:10:53:58 -0400"}
+info: ::1 - - [16/Nov/2023:17:27:30 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"16/Nov/2023:13:27:30 -0400"}
+info: ::1 - - [16/Nov/2023:17:27:31 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"16/Nov/2023:13:27:31 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:13:27:41 -0400"}
+info: estoy dentro del UserById Service {"timestamp":"16/Nov/2023:13:27:41 -0400"}
+debug: esto es {"timestamp":"16/Nov/2023:13:27:41 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:13:27:41 -0400"}
+info: ::1 - - [16/Nov/2023:17:27:41 +0000] "GET /users/1 HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"16/Nov/2023:13:27:41 -0400"}
+info: ::1 - - [16/Nov/2023:17:34:45 +0000] "GET /users/1 HTTP/1.1" 404 146 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:13:34:45 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:13:35:01 -0400"}
+info: estoy dentro del UserById Service {"timestamp":"16/Nov/2023:13:35:01 -0400"}
+debug: esto es {"timestamp":"16/Nov/2023:13:35:01 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:13:35:01 -0400"}
+info: ::1 - - [16/Nov/2023:17:35:01 +0000] "GET /api/users/1 HTTP/1.1" 200 99 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:13:35:01 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:13:36:09 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:13:36:09 -0400"}
+info: ::1 - - [16/Nov/2023:17:36:10 +0000] "POST /api/users/ HTTP/1.1" 201 309 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:13:36:10 -0400"}
+info: Actualizando información de usuario en Repository {"timestamp":"16/Nov/2023:13:39:21 -0400"}
+info: ::1 - - [16/Nov/2023:17:39:21 +0000] "POST /api/auth/login HTTP/1.1" 201 334 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:13:39:21 -0400"}
+error: Error en Create user data and hash arguments required {"stack":"Error: data and hash arguments required\n    at Object.compare (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\node_modules\\bcrypt\\bcrypt.js:208:17)\n    at C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\node_modules\\bcrypt\\promises.js:29:12\n    at new Promise (<anonymous>)\n    at Object.module.exports.promise (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\node_modules\\bcrypt\\promises.js:20:12)\n    at Object.compare (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\node_modules\\bcrypt\\bcrypt.js:204:25)\n    at AuthService.<anonymous> (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\auth.service.ts:40:48)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\Ambar\\Documents\\UPB\\CertBackend\\Curso-Backend\\nodejs\\lesson01\\sql-app\\src\\app\\services\\auth.service.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"16/Nov/2023:13:40:05 -0400"}
+info: ::1 - - [16/Nov/2023:17:40:05 +0000] "POST /api/auth/login HTTP/1.1" 400 14 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:13:40:05 -0400"}
+info: Actualizando información de usuario en Repository {"timestamp":"16/Nov/2023:13:40:54 -0400"}
+info: ::1 - - [16/Nov/2023:17:40:54 +0000] "POST /api/auth/login HTTP/1.1" 201 334 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:13:40:54 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:14:07:20 -0400"}
+info: estoy dentro del UserById Service {"timestamp":"16/Nov/2023:14:07:20 -0400"}
+debug: esto es {"timestamp":"16/Nov/2023:14:07:20 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:14:07:20 -0400"}
+info: ::1 - - [16/Nov/2023:18:07:20 +0000] "GET /api/users/26c244fd-3a32-4fc8-ab72-e279a33fc259 HTTP/1.1" 200 106 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:14:07:20 -0400"}
+info: ::1 - - [17/Nov/2023:01:17:03 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"16/Nov/2023:21:17:03 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:17:11 -0400"}
+error: Error de usuario {"timestamp":"16/Nov/2023:21:17:12 -0400"}
+info: ::1 - - [17/Nov/2023:01:17:12 +0000] "GET /api/users/26c244fd-3a32-4fc8-ab72-e279a33fc259 HTTP/1.1" 404 28 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:17:12 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:21:17:43 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:21:17:43 -0400"}
+info: ::1 - - [17/Nov/2023:01:17:43 +0000] "POST /api/users/ HTTP/1.1" 201 304 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:17:43 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:18:01 -0400"}
+error: Error de usuario {"timestamp":"16/Nov/2023:21:18:01 -0400"}
+info: ::1 - - [17/Nov/2023:01:18:01 +0000] "GET /api/users/6f5c1ae5-63f8-4fa3-8219-b732b154d4d2 HTTP/1.1" 404 28 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:18:01 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:18:53 -0400"}
+error: Error de usuario {"timestamp":"16/Nov/2023:21:18:53 -0400"}
+info: ::1 - - [17/Nov/2023:01:18:53 +0000] "GET /api/users/6f5c1ae5-63f8-4fa3-8219-b732b154d4d2 HTTP/1.1" 404 28 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:18:53 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:19:24 -0400"}
+info: estoy dentro del UserById Service {"timestamp":"16/Nov/2023:21:19:24 -0400"}
+debug: esto es {"timestamp":"16/Nov/2023:21:19:24 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:21:19:24 -0400"}
+info: ::1 - - [17/Nov/2023:01:19:24 +0000] "GET /api/users/6f5c1ae5-63f8-4fa3-8219-b732b154d4d2 HTTP/1.1" 200 104 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:19:24 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:26:50 -0400"}
+info: ::1 - - [17/Nov/2023:01:26:50 +0000] "GET /api/users/6f5c1ae5-63f8-4fa3-8219-b732b154d4d2 HTTP/1.1" 200 342 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:26:50 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:28:27 -0400"}
+info: ::1 - - [17/Nov/2023:01:28:27 +0000] "GET /api/users/6f5c1ae5-63f8-4fa3-8219-b732b154d4d2 HTTP/1.1" 200 342 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:28:27 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:21:28:42 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:21:28:43 -0400"}
+info: ::1 - - [17/Nov/2023:01:28:43 +0000] "POST /api/users/ HTTP/1.1" 201 305 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:28:43 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:28:56 -0400"}
+info: estoy dentro del UserById Service {"timestamp":"16/Nov/2023:21:28:56 -0400"}
+debug: esto es {"timestamp":"16/Nov/2023:21:28:56 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:21:28:56 -0400"}
+info: ::1 - - [17/Nov/2023:01:28:56 +0000] "GET /api/users/47112caf-93d1-4393-ada0-ad033e5047ba HTTP/1.1" 200 105 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:28:56 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:29:03 -0400"}
+info: ::1 - - [17/Nov/2023:01:29:03 +0000] "GET /api/users/47112caf-93d1-4393-ada0-ad033e5047ba HTTP/1.1" 200 343 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:29:03 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:30:17 -0400"}
+info: ::1 - - [17/Nov/2023:01:30:18 +0000] "GET /api/users/47112caf-93d1-4393-ada0-ad033e5047ba HTTP/1.1" 200 305 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:30:18 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:21:38:36 -0400"}
+info: Creando usuario en Repository {"timestamp":"16/Nov/2023:21:38:36 -0400"}
+info: ::1 - - [17/Nov/2023:01:38:36 +0000] "POST /api/users/ HTTP/1.1" 201 306 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:38:36 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:38:49 -0400"}
+info: estoy dentro del UserById Service {"timestamp":"16/Nov/2023:21:38:50 -0400"}
+debug: esto es {"timestamp":"16/Nov/2023:21:38:50 -0400"}
+info: Alguna información relevante {"timestamp":"16/Nov/2023:21:38:50 -0400"}
+info: ::1 - - [17/Nov/2023:01:38:50 +0000] "GET /api/users/b3c2da46-5577-458c-8edd-037bb6507b74 HTTP/1.1" 200 106 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:38:50 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"16/Nov/2023:21:38:53 -0400"}
+info: ::1 - - [17/Nov/2023:01:38:53 +0000] "GET /api/users/b3c2da46-5577-458c-8edd-037bb6507b74 HTTP/1.1" 200 106 "-" "PostmanRuntime/7.35.0" {"timestamp":"16/Nov/2023:21:38:53 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:20 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:20 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:21 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:21 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:21 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:21 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:22 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:22 -0400"}
+info: ::1 - - [20/Nov/2023:17:17:22 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:22 -0400"}
+info: ::1 - - [20/Nov/2023:17:55:02 +0000] "POST /api/files/ HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:55:02 -0400"}

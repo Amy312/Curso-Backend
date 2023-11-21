@@ -1,9 +1,9 @@
 import { UserDto } from "../../app/dtos/user.dto";
+import { User } from "../../domain/models/User.model";
 import { AppDataSource } from "../config/dataSource";
 import { UserEntity } from "../entities/user.entity";
 import logger from "../logger/logger";
 import { UserRepository } from "./../../domain/interfaces/user.repository";
-import { User } from "./../../domain/models/User.model";
 import bcrypt from "bcrypt";
 
 export class UserRepositoryImpl implements UserRepository {
@@ -54,14 +54,14 @@ export class UserRepositoryImpl implements UserRepository {
     });
   }
 
-  async updateUser(id: string, user: Partial<User>): Promise<User> {
+  async updateUser(id: string, userData: Partial<User>): Promise<User> {
     logger.info("Actualizando información de usuario en Repository");
 
     // Buscar el usuario por su ID
     const repository = AppDataSource.getRepository(UserEntity);
-    const userN = await repository.findOneBy({ id });
+    const user = await repository.findOneBy({ id });
 
-    if (!userN) {
+    if (!user) {
       logger.error(
         `UserRepository: Error al modificar al usuario con ID: ${id}.`
       );
@@ -73,11 +73,11 @@ export class UserRepositoryImpl implements UserRepository {
     // if (!role)
     // user.role = role
 
-    repository.merge(userN, user);
-    const updatedUser = await repository.save(userN);
+    AppDataSource.getRepository(UserEntity).merge(user, userData);
+    const updatedUser = await repository.save(user);
     return updatedUser;
   }
-  async deleteUser(id: string): Promise<User | null> {
+  async deleteUser(id: string): Promise<void> {
     logger.info("Eliminando usuario en Repository");
 
     // Buscar el usuario por su ID
@@ -88,12 +88,9 @@ export class UserRepositoryImpl implements UserRepository {
     if (userEntity) {
       // Eliminar el usuario de la base de datos
       await AppDataSource.getRepository(UserEntity).remove(userEntity);
-
       logger.debug("Usuario eliminado correctamente");
-      return userEntity;
     } else {
       logger.error("Usuario no encontrado para eliminar");
-      return null;
     }
   }
 }
