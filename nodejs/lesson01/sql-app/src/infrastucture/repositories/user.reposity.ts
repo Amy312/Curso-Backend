@@ -42,6 +42,7 @@ export class UserRepositoryImpl implements UserRepository {
       role: user.role,
     });
     const userResponse = await userRepository.save(userEntity);
+    console.log("🚀 ~ file: user.reposity.ts:45 ~ UserRepositoryImpl ~ createUser ~ userResponse:", userResponse)
 
     return new User({
       id: userResponse.id,

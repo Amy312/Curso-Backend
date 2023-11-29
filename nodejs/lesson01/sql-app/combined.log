@@ -270,3 +270,48 @@ info: ::1 - - [20/Nov/2023:17:17:21 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-
 info: ::1 - - [20/Nov/2023:17:17:22 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:22 -0400"}
 info: ::1 - - [20/Nov/2023:17:17:22 +0000] "GET /api/users/ HTTP/1.1" 404 149 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:17:22 -0400"}
 info: ::1 - - [20/Nov/2023:17:55:02 +0000] "POST /api/files/ HTTP/1.1" 404 150 "-" "PostmanRuntime/7.35.0" {"timestamp":"20/Nov/2023:13:55:02 -0400"}
+info: ::1 - - [22/Nov/2023:16:47:54 +0000] "GET / HTTP/1.1" 200 45 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:12:47:54 -0400"}
+info: ::1 - - [22/Nov/2023:16:47:54 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:12:47:54 -0400"}
+info: ::1 - - [22/Nov/2023:17:39:17 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:39:17 -0400"}
+info: ::1 - - [22/Nov/2023:17:39:46 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:39:46 -0400"}
+info: ::1 - - [22/Nov/2023:17:42:03 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:42:03 -0400"}
+info: ::1 - - [22/Nov/2023:17:43:33 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:43:33 -0400"}
+info: ::1 - - [22/Nov/2023:17:46:44 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:46:44 -0400"}
+info: ::1 - - [22/Nov/2023:17:51:17 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:51:17 -0400"}
+info: ::1 - - [22/Nov/2023:17:52:15 +0000] "GET /api/users HTTP/1.1" 404 148 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:13:52:15 -0400"}
+info: ::1 - - [22/Nov/2023:17:52:40 +0000] "GET /api/users/1 HTTP/1.1" 401 36 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:13:52:40 -0400"}
+info: Actualizando información de usuario en Repository {"timestamp":"22/Nov/2023:13:52:55 -0400"}
+info: ::1 - - [22/Nov/2023:17:52:55 +0000] "POST /api/auth/login HTTP/1.1" 201 334 "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:52:55 -0400"}
+info: ::1 - - [22/Nov/2023:17:53:13 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:53:13 -0400"}
+info: Actualizando información de usuario en Repository {"timestamp":"22/Nov/2023:13:53:27 -0400"}
+info: ::1 - - [22/Nov/2023:17:53:27 +0000] "POST /api/auth/login HTTP/1.1" 201 334 "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:53:27 -0400"}
+info: ::1 - - [22/Nov/2023:17:53:38 +0000] "GET /api/users/1 HTTP/1.1" 401 36 "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:53:38 -0400"}
+info: estoy dentro del UserById Controller {"timestamp":"22/Nov/2023:13:53:48 -0400"}
+info: ::1 - - [22/Nov/2023:17:53:48 +0000] "GET /api/users/1 HTTP/1.1" 200 99 "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:13:53:48 -0400"}
+info: ::1 - - [22/Nov/2023:18:00:37 +0000] "GET /users/1 HTTP/1.1" 404 146 "http://localhost:3000/docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:14:00:37 -0400"}
+info: Actualizando información de usuario en Repository {"timestamp":"22/Nov/2023:14:03:23 -0400"}
+info: ::1 - - [22/Nov/2023:18:03:23 +0000] "PUT /api/users/1 HTTP/1.1" 201 169 "http://localhost:3000/docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:14:03:23 -0400"}
+info: ::ffff:127.0.0.1 - - [22/Nov/2023:18:04:17 +0000] "GET /api/users/1 HTTP/1.1" 401 36 "http://localhost:3000/docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:14:04:17 -0400"}
+info: Actualizando información de usuario en Repository {"timestamp":"22/Nov/2023:14:04:30 -0400"}
+info: ::ffff:127.0.0.1 - - [22/Nov/2023:18:04:30 +0000] "PUT /api/users/1 HTTP/1.1" 201 169 "http://localhost:3000/docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:14:04:30 -0400"}
+info: Eliminando usuario en Repository {"timestamp":"22/Nov/2023:14:04:40 -0400"}
+debug: Usuario eliminado correctamente {"timestamp":"22/Nov/2023:14:04:40 -0400"}
+info: ::1 - - [22/Nov/2023:18:04:40 +0000] "DELETE /api/users/1 HTTP/1.1" 201 - "http://localhost:3000/docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" {"timestamp":"22/Nov/2023:14:04:40 -0400"}
+info: ::1 - - [22/Nov/2023:18:12:29 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"22/Nov/2023:14:12:29 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:23:49 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:24:23 -0400"}
+info: ::1 - - [23/Nov/2023:17:29:25 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"23/Nov/2023:13:29:25 -0400"}
+info: ::1 - - [23/Nov/2023:17:29:38 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"23/Nov/2023:13:29:38 -0400"}
+info: ::1 - - [23/Nov/2023:17:29:46 +0000] "GET /api/users/1 HTTP/1.1" 403 30 "-" "PostmanRuntime/7.35.0" {"timestamp":"23/Nov/2023:13:29:46 -0400"}
+info: ::1 - - [23/Nov/2023:17:30:26 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"23/Nov/2023:13:30:26 -0400"}
+info: ::1 - - [23/Nov/2023:17:30:30 +0000] "POST /api/users/ HTTP/1.1" - - "-" "PostmanRuntime/7.35.0" {"timestamp":"23/Nov/2023:13:30:30 -0400"}
+info: Actualizando información de usuario en Repository {"timestamp":"23/Nov/2023:13:30:50 -0400"}
+info: ::1 - - [23/Nov/2023:17:30:50 +0000] "POST /api/auth/login HTTP/1.1" 201 334 "-" "PostmanRuntime/7.35.0" {"timestamp":"23/Nov/2023:13:30:50 -0400"}
+info: Actualizando información de usuario en Repository {"timestamp":"23/Nov/2023:13:32:53 -0400"}
+info: ::1 - - [23/Nov/2023:17:32:53 +0000] "POST /api/auth/login HTTP/1.1" 201 334 "-" "PostmanRuntime/7.35.0" {"timestamp":"23/Nov/2023:13:32:53 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:36:58 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:45:38 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:47:26 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"25/Nov/2023:08:52:51 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"25/Nov/2023:08:55:21 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"25/Nov/2023:08:57:11 -0400"}

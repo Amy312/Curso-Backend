@@ -1,6 +1,8 @@
 import express, { Request, Response } from 'express';
 import { AppDataSource } from './infrastucture/config/dataSource';
 import morgan from "morgan";
+import SwaggerUi from 'swagger-ui-express';
+import swaggerSpec from './api/swagger/swaggerConfig';
 import logger from './infrastucture/logger/logger'; 
 import { env } from './infrastucture/config/config';
 import { routes } from './api/controllers/apiRoutes';
@@ -12,6 +14,7 @@ AppDataSource.initialize().then(() => {
     console.log(PORT);
 
     app.use(express.json());
+    app.use('/docs', SwaggerUi.serve, SwaggerUi.setup(swaggerSpec));
     app.use(limiter);
     app.use(
         morgan("combined", {

@@ -22,6 +22,8 @@ export class AuthService {
 
         };
         const user: User = await this.userRepository.findByEmail(userEntity.email);
+        console.log("🚀 ~ file: auth.service.ts:25 ~ AuthService ~ login ~ userEntity.email:", userEntity.email, user)
+        
         const USER_KEY = 'USER';
        // this.redisCacheService.set(`${USER_KEY}:${user.id}`, JSON.stringify(user));
         if(!user){
@@ -35,7 +37,7 @@ export class AuthService {
             throw Error('El email o el password son incorrectos');
         }
 
-        const token = this.encrypt.encrypt({ userId: user.id });
+        const token = await this.encrypt.encrypt({ userId: user.id });
         user.token = token;
         user.lastLogin = new Date();
 

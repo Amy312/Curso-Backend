@@ -1,10 +1,10 @@
-import { Request, Response, Router } from 'express';
 import { UserService } from '../../app/services/userService';
 import { UserDto } from '../../app/dtos/user.dto';
 import { CreateUserDTO } from '../../app/dtos/create.user.dto';
 import logger from '../../infrastructure/logger/logger';
 import { verifyTokenMiddleware } from '../middleware/verifyToken';
 import { userValidationRules, validate } from '../middleware/userValidator';
+import { Request, Response, Router } from 'express';
 
 export class UserController {
     public router: Router;

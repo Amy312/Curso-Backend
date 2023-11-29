@@ -17,13 +17,15 @@ const redisCacheService = new RedisCacheService();
 
 const encrypt = new EncryptImpl();
 
-const permissionRepository = new PermissionRepositoryImpl();
-const permissionService = new PermissionService(permissionRepository);
-const permissionController = new PermissionController(permissionService);
+
 
 const rolRepository = new RolRepositoryImpl();
 const rolService = new RolService(rolRepository);
 const rolController = new RolController(rolService);
+
+const permissionRepository = new PermissionRepositoryImpl();
+const permissionService = new PermissionService(permissionRepository, rolRepository);
+const permissionController = new PermissionController(permissionService);
 
 const userRepository = new UserRepositoryImpl();
 const userService = new UserService(userRepository, rolRepository, redisCacheService);

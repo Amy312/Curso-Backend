@@ -12,3 +12,11 @@ error: Error en Create user data and hash arguments required {"stack":"Error: da
 error: Error de usuario {"timestamp":"16/Nov/2023:21:17:12 -0400"}
 error: Error de usuario {"timestamp":"16/Nov/2023:21:18:01 -0400"}
 error: Error de usuario {"timestamp":"16/Nov/2023:21:18:53 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:23:49 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:24:23 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:36:58 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:45:38 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"23/Nov/2023:13:47:26 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"25/Nov/2023:08:52:51 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"25/Nov/2023:08:55:21 -0400"}
+error: EL usuario con el email: test@example.com no existe {"timestamp":"25/Nov/2023:08:57:11 -0400"}

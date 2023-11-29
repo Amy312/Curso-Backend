@@ -27,3 +27,8 @@ export const jwt = {
 export const redis = {
     url:process.env.RD_URL || 'localhost',
 }
+
+export const swagger = {
+    name: process.env.SW_NAME || "mi app",
+    version: process.env.SW_VERSION || "1.0.0"
+}
