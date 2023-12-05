@@ -1,6 +1,7 @@
 package com.library.auth.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 import java.lang.annotation.Target;
@@ -9,6 +10,7 @@ import java.lang.annotation.Target;
 @Table(name = "User")
 public class UserEntity {
 
+    @Id
     private String id;
     private String username;
     private String password;

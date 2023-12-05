@@ -17,13 +17,13 @@ public class AuthController {
     private UserService userService;
 
     @PostMapping("/login")
-    public User login(@RequestBody User user) {
-        return userService.save(user);
+    public String login(@RequestBody User user) {
+        return userService.login(user);
     }
 
     @PostMapping("/logout")
-    public User logout(@RequestBody User user) {
-        return userService.save(user);
+    public String logout(@RequestBody User user) {
+        return userService.logout(user);
     }
 
 
